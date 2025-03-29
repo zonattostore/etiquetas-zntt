@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 import { CellBase, Matrix } from 'react-spreadsheet';
 import { Col, Row } from 'simple-display';
 import { matrixToData, mmToPx } from '../../utils/convert';
