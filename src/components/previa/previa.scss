@@ -1,0 +1,44 @@
+.previa {
+  position: relative;
+
+  .conteudo {
+    margin: 0 auto;
+    display: grid;
+    break-inside: avoid;
+
+    .table-row {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      break-inside: avoid;
+      page-break-inside: avoid;
+      padding-bottom: 8px;
+
+      .table-col {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        span {
+          line-height: 20px;
+          padding: 8px;
+        }
+      }
+    }
+  }
+
+  .preco {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+  }
+
+  .table-col span {
+    padding: 4px 8px !important;
+  }
+}

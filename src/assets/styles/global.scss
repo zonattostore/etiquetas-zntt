@@ -1,0 +1,27 @@
+@use './reset' as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 12px;
+
+  background-color: #ffe0e4;
+  color: #252525;
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+h5 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

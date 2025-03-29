@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #ffe0e4;
+  color: #252525;
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 'width' 100;
+  font-weight: 400;
+  font-style: normal;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid #ddd;
+
+  tr td {
+    margin: 0 auto;
+    break-inside: avoid;
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+.preco {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media print {
+  body {
+    width: 100%;
+    background-color: #ffffff !important;
+  }
+
+  table {
+    margin: 0 auto;
+    border: none;
+    break-inside: avoid;
+  }
+
+  table tr {
+    break-inside: avoid;
+  }
+
+  table tr td {
+    break-inside: avoid;
+    border: none;
+    padding: 5px 12px !important;
+  }
+}
